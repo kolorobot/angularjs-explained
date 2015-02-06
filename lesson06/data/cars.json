@@ -1,0 +1,26 @@
+[
+  {
+    "make": "Lexus",
+    "model": "CT",
+    "year": 2015,
+    "price": 42000,
+    "description": "The Lexus CT 200h is a hybrid electric automobile introduced by Lexus as a premium sport compact hatchback.",
+    "added": 1423082130000
+  },
+  {
+    "make": "Audi",
+    "model": "A8",
+    "year": 2014,
+    "price": 35000,
+    "description": "The Audi A8 is a four-door, full-size, luxury sedan car manufactured and marketed by the German automaker Audi since 1994.",
+    "added": 1423168530000
+  },
+  {
+    "make": "Volvo",
+    "model": "XC90",
+    "year": 2012,
+    "price": 55000,
+    "description": "The Volvo XC90 is a mid-size luxury crossover SUV produced by Volvo Cars since it was unveiled at the Detroit Motor Show 2002.",
+    "added": 1423258530000
+  }
+]

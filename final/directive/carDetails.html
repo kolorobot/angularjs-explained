@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+    <div class="panel-heading" ng-click="showQuery()">
+        <h3 class="panel-title" ng-class="{'important' : important}">{{ car.make }} {{ car.model }} {{ car.price | currency:currencySymbol }}</h3>
+    </div>
+    <div class="panel-body">
+        <p>
+            {{ car.description }}
+        </p>
+        <p class="text-right">
+            {{ toDate({timestamp: car.added}) | date:dateFormat }}
+        </p>
+    </div>
+</div>

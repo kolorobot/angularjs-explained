@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="starterApp">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="AngularJS - Explained"/>
+    <meta name="author" content="Rafał Borowiec | blog.codeleak.pl"/>
+
+    <title>AngularJS - Explained</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../libs/bootstrap/bootstrap.css"/>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 80px;
+        }
+
+        .ng-cloak {
+            display: none !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">Starter</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <!-- @TODO Add link to new route -->
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container ng-cloak" ng-controller="HomeCtrl">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-2">
+            <!-- @TODO Move this part to a separate view when using ng-route -->
+            <h4>Car search ({{ query }})</h4>
+            <form ng-submit="search()">
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="query">
+                </div>
+                <input type="submit" class="btn btn-primary" value="Cars" />
+            </form>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+<script src="../libs/jquery/jquery.js"></script>
+<script src="../libs/bootstrap/bootstrap.js"></script>
+<script src="../libs/angular/angular.js"></script>
+<!-- @TODO Add reference to ng-route library -->
+<script src="app.js"></script>
+</body>
+</html>
